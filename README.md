@@ -2,29 +2,44 @@
 
 > Shared UI components and styles
 
-[![NPM](https://img.shields.io/npm/v/orion-ui-kit.svg)](https://www.npmjs.com/package/orion-ui-kit) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+## Authorize
+
+```bash
+npm login --registry=https://npm.pkg.github.com
+> Username: USERNAME
+> Password: TOKEN
+> Email: PUBLIC-EMAIL-ADDRESS
+```
+
+where `TOKEN` is github auth token (https://github.com/settings/tokens) with permissions: repo, delete:packages, write:packages
 
 ## Install
 
-```bash
-npm install --save orion-ui-kit
-```
+In project that used orion-ui-kit:
+
+* make file ".npmrc" with line "registry=https://npm.pkg.github.com/orionprotocol"
+
+* add ""@orionprotocol/orion-ui-kit"" to "dependencies" in package.json
+
+* `npm install`
 
 ## Usage
 
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'orion-ui-kit'
-import 'orion-ui-kit/dist/index.css'
+import {ExampleComponent} from '@orionprotocol/orion-ui-kit'
+import '@orionprotocol/orion-ui-kit/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <ExampleComponent />
   }
 }
 ```
 
-## License
+## Info
 
-MIT © [orionprotocol](https://github.com/orionprotocol)
+Created by create-react-library
+
+[Configuring npm for use with GitHub Packages](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages)
