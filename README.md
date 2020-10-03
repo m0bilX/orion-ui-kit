@@ -19,7 +19,7 @@ In project that used orion-ui-kit:
 
 * make file ".npmrc" with line "registry=https://npm.pkg.github.com/orionprotocol"
 
-* add ""@orionprotocol/orion-ui-kit"" to "dependencies" in package.json
+* add "@orionprotocol/orion-ui-kit" to "dependencies" in package.json
 
 * `npm install`
 
