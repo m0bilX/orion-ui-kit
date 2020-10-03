@@ -1,0 +1,22 @@
+.root {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    color: #434054;
+    margin-left: 7px;
+    font-weight: 600;
+}
+
+.dark .text {
+    color: #fff;
+}
+
+.iconWrapper {
+    width: 21px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

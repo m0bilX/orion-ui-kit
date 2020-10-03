@@ -1,0 +1,33 @@
+.root {
+    display: flex;
+    position: relative;
+}
+
+.select {
+    border: 1px solid transparent;
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 2px;
+    padding: 9px 30px 9px 12px;
+    background: #F8F8F8;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #72707F;
+    width: 100%;
+}
+
+.dark .select {
+    color: #9090A8;
+    background: rgba(224,224,255,.02);
+}
+
+.arrow {
+    pointer-events: none;
+    position: absolute;
+    right: 7px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}

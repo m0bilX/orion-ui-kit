@@ -1,0 +1,59 @@
+input[type="radio"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+}
+
+.root {
+    display: flex;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    align-items: center;
+    position: relative;
+}
+
+.root:hover {
+    opacity: 0.7;
+}
+
+.point {
+    width: 11px;
+    height: 11px;
+    border: 1px solid #9090A8;
+    position: relative;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked ~ .point,
+.pointActive {
+    border: 1px solid #434054;
+}
+
+input[type="radio"]:checked ~ .point:after,
+.pointActive:after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #434054;
+    border-radius: 50%;
+}
+
+.dark input[type="radio"]:checked ~ .point,
+.dark .pointActive {
+    border: 1px solid #fff;
+}
+
+.dark input[type="radio"]:checked ~ .point:after,
+.dark .pointActive:after {
+    background: #fff;
+}

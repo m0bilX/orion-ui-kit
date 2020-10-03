@@ -1,0 +1,32 @@
+.root {
+    width: 40px;
+    height: 24px;
+    position: relative;
+    padding: 2px;
+    background: rgba(20, 16, 41, 0.02);
+    border-radius: 12px;
+}
+
+.dark {
+    background: linear-gradient(149.04deg, #00FFAA 0%, #00BBFF 51.01%, #4579F5 100%);
+    box-shadow: 0 0 1px rgba(0, 187, 255, 0.24), 0 2px 4px rgba(27, 10, 82, 0.12), 0 8px 12px rgba(0, 187, 255, 0.24);
+}
+
+.inner:after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    transform: translateX(0);
+    transition: transform 0.25s ease;
+
+    background: #FFFFFF;
+    box-shadow: 0 0 1px rgba(20, 16, 41, 0.12), 0 2px 4px rgba(20, 16, 41, 0.06), 0px 8px 8px rgba(20, 16, 41, 0.06);
+    border-radius: 12px;
+}
+
+.isActive:after {
+    transform: translateX(100%);
+    right: 4px;
+}

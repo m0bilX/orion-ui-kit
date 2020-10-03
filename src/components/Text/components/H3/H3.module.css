@@ -1,0 +1,16 @@
+.root {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #434054;
+}
+
+.dark {
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .root {
+        font-size: 18px;
+    }
+}

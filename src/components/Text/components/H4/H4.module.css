@@ -1,0 +1,11 @@
+.root {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #434054;
+}
+
+.dark {
+    color: #fff;
+}

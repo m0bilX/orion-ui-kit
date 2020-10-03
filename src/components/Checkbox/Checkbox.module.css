@@ -1,0 +1,31 @@
+.root {
+    display: flex;
+    position: relative;
+}
+
+.cb {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    text-indent: -999999999px;
+    visibility: hidden;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.cbStub {
+    width: 14px;
+    height: 14px;
+
+    border: 1px solid #9897B5;
+    border-radius: 1px;
+    flex-shrink: 0;
+}
+
+.cb:checked + .cbStub {
+    background-image: url('/img/check.svg');
+    background-size: 66%;
+    background-position: center;
+    background-repeat: no-repeat;
+}

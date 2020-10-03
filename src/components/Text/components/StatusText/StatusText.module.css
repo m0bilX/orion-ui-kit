@@ -1,0 +1,23 @@
+.filled {
+    color: #FFAA00;
+}
+
+.filled.dark {
+    color: #EEFF00;
+}
+
+.cancelled {
+    color: #F54562;
+}
+
+.cancelled.dark {
+    color: #FF00AA;
+}
+
+.open {
+    color: #16B862;
+}
+
+.open.dark {
+    color: #00FFAA;
+}

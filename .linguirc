@@ -1,0 +1,17 @@
+{
+    "compileNamespace": "es",
+    "extractBabelOptions": {
+      "plugins": ["@babel/plugin-syntax-dynamic-import"],
+    },
+    "fallbackLocale": "en",
+    "sourceLocale": "en",
+    "catalogs": [{
+      "path": "src/locales/{locale}",
+      "include": ["src"],
+      "exclude": [
+        "/node_modules/"
+      ]
+    }],
+    "locales": ["en", "ru"],
+    "format": "minimal",
+}

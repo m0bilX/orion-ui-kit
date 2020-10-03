@@ -1,0 +1,32 @@
+@media (hover: hover) {
+    ::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(20, 16, 41, 0.02);
+        border-radius: 2px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(20, 16, 41, 0.06);
+        border-radius: 2px;
+    }
+
+    .dark  ::-webkit-scrollbar-track {
+        background: rgba(224, 224, 255, 0.02);
+    }
+
+    .dark  ::-webkit-scrollbar-thumb {
+        background: rgba(224, 224, 255, 0.06);
+    }
+
+    ::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    ::-webkit-scrollbar-corner {
+        display: none;
+    }
+}

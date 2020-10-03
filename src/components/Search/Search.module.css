@@ -1,0 +1,35 @@
+input.input {
+    width: 100%;
+    border: 0;
+    padding: 7px 9px 9px 48px;
+    box-shadow: none;
+    color: #A19FA9;
+    -webkit-text-fill-color: #A19FA9;
+}
+
+input.input.dark {
+    color: #9090A8;
+    -webkit-text-fill-color: #9090A8;
+}
+
+.root {
+    position: relative;
+    width: 100%;
+}
+
+.root:after {
+    content: ' ';
+    position: absolute;
+    left: 12px;
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("/img/search.svg");
+}
+
+.dark:after {
+    background-image: url("/img/search_dark.svg");
+}

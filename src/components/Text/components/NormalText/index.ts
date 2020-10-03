@@ -1,0 +1,1 @@
+export { NormalText } from './NormalText';
