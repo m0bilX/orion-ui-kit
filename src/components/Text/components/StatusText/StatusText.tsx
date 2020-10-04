@@ -12,7 +12,7 @@ type Props = {
 
 const getStatusTypeClassName = (type: STATUS_TYPE) => {
     switch (type) {
-        case STATUS_TYPE.OPEN:
+        case STATUS_TYPE.NEW:
             return styles.open;
         case STATUS_TYPE.FILLED:
             return styles.filled;

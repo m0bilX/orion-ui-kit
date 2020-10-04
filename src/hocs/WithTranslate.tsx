@@ -21,7 +21,7 @@ export const WithTranslate: FC = ({ children }) => {
     const changeLanguage = async (nextLanguage: LANGUAGE) => {
         try {
             const languageStr = getLocale(nextLanguage);
-            const { messages } = await import(`../locales/${languageStr}`);
+            const { messages } = await import(`./locales/${languageStr}`);
 
             i18n.load(languageStr, messages);
             i18n.activate(languageStr);

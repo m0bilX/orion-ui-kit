@@ -1,7 +1,7 @@
 export enum STATUS_TYPE {
     FILLED = 'FILLED',
     CANCELLED = 'CANCELLED',
-    OPEN = 'OPEN',
+    NEW = 'NEW',
     PARTIAL = 'PARTIAL',
     ALL = 'ALL',
 }
