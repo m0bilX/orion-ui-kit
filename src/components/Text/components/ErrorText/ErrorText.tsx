@@ -1,6 +1,5 @@
-import React, { FC, useContext } from "react";
+import React, { FC } from "react";
 import cn from 'classnames';
-import { Theme, THEME } from "../../../Theme";
 import styles from "./ErrorText.module.css";
 
 type Props = {
@@ -9,10 +8,7 @@ type Props = {
 };
 
 export const ErrorText: FC<Props> = ({ children, className, onClick }) => {
-    const {theme} = useContext(Theme);
-    const dark = theme === THEME.DARK ? styles.dark : '';
-
     return (
-        <div className={cn([styles.root, dark, className])} onClick={onClick}>{children}</div>
+        <div className={cn([styles.root, className])} onClick={onClick}>{children}</div>
     );
 };

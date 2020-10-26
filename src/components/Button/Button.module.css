@@ -24,7 +24,7 @@
     border: 0;
 }
 
-.dark.btnLite {
+:global(.dark) .btnLite {
     background: rgba(224, 224, 255, 0.02);
 }
 
@@ -54,7 +54,7 @@
     justify-content: center;
 }
 
-.transparent.dark {
+:global(.dark) .transparent {
     border: 1px solid #9090A8;
 }
 

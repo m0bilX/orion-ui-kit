@@ -1,7 +1,6 @@
-import React, {FC, useContext, useEffect} from 'react';
+import React, {FC, useEffect} from 'react';
 import cn from 'classnames';
 import { Icon, ICON_TYPE } from "../Icon";
-import {THEME, Theme} from "../Theme";
 import styles from './Popup.module.css';
 
 type Props = {
@@ -11,8 +10,6 @@ type Props = {
 
 export const Popup: FC<Props> = (props) => {
     const { className = '', children, onClose } = props;
-    const {theme} = useContext(Theme);
-    const dark = theme === THEME.DARK ? styles.dark : '';
 
     useEffect(() => {
         const closePopup = (e: any) => {
@@ -27,7 +24,7 @@ export const Popup: FC<Props> = (props) => {
     }, []);
 
     return (
-        <div className={cn([styles.root, dark, className])}>
+        <div className={cn([styles.root, className])}>
             <div className={styles.popup}>
                 <div className={styles.closeButtonWrapper} onClick={onClose}>
                     <Icon type={ICON_TYPE.CLOSE} className={styles.closeButton}/>

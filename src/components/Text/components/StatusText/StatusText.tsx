@@ -1,6 +1,5 @@
-import React, {FC, useContext} from "react";
+import React, {FC} from "react";
 import cn from 'classnames';
-import { Theme, THEME } from "../../../Theme";
 import {NormalText} from "../NormalText";
 import {STATUS_TYPE} from "./StatusText.enums";
 import styles from "./StatusText.module.css";
@@ -24,9 +23,7 @@ const getStatusTypeClassName = (type: STATUS_TYPE) => {
 };
 
 export const StatusText: FC<Props> = ({ className = '', type, children }) => {
-    const {theme} = useContext(Theme);
-    const dark = theme === THEME.DARK ? styles.dark : '';
-    const rootClassName = cn([getStatusTypeClassName(type), dark, className]);
+    const rootClassName = cn([getStatusTypeClassName(type), className]);
 
     return (
         <NormalText className={rootClassName}>{children}</NormalText>

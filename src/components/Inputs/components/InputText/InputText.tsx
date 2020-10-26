@@ -1,7 +1,6 @@
-import React, {ChangeEvent, FocusEvent, FC, useContext} from "react";
+import React, {ChangeEvent, FocusEvent, FC} from "react";
 import cn from 'classnames';
 import styles from './InputText.module.css';
-import {THEME, Theme} from "../../../Theme";
 
 type Props = {
     className?: string;
@@ -17,15 +16,13 @@ type Props = {
 
 export const InputText: FC<Props> = (props) => {
     const { className, value, onChange, name, id, readOnly, autoComplete, placeholder } = props;
-    const {theme} = useContext(Theme);
-    const dark = theme === THEME.DARK ? styles.dark : '';
 
     return (
         <input id={id}
                type="text"
                readOnly={readOnly}
                name={name}
-               className={cn([styles.root, dark, className])}
+               className={cn([styles.root, className])}
                value={value}
                onChange={onChange}
                onFocus={props.onFocus}

@@ -1,8 +1,7 @@
-import React, {FC, useContext} from 'react';
+import React, {FC} from 'react';
 import cn from 'classnames';
 import { BUTTON_TYPE } from "./Button.enums";
 import styles from './Button.module.css';
-import {THEME, Theme} from "../Theme";
 
 type Props = {
     onClick?: () => void;
@@ -27,10 +26,8 @@ const getClassName = (type: BUTTON_TYPE) => {
 
 export const Button: FC<Props> = (props) => {
     const { children, onClick, type = BUTTON_TYPE.LITE, isDisabled = false, className = '' } = props;
-    const {theme} = useContext(Theme);
-    const dark = theme === THEME.DARK ? styles.dark : '';
     const buttonClassName = getClassName(type);
-    const rootClassName = cn([buttonClassName, className, dark]);
+    const rootClassName = cn([buttonClassName, className]);
 
     return (
         <button type="button" className={rootClassName} onClick={!isDisabled ? onClick : undefined} disabled={isDisabled}>

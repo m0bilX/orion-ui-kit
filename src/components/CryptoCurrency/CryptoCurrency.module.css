@@ -9,7 +9,7 @@
     font-weight: 600;
 }
 
-.dark .text {
+:global(.dark) .text {
     color: #fff;
 }
 

@@ -1,7 +1,6 @@
-import React, {ChangeEvent, FC, useContext} from "react";
+import React, {ChangeEvent, FC} from "react";
 import cn from 'classnames';
 import {Arrow} from "../../../Arrow";
-import {THEME, Theme} from "../../../Theme";
 import styles from './Select.module.css';
 
 type Props = {
@@ -13,11 +12,9 @@ type Props = {
 
 export const Select: FC<Props> = (props) => {
     const { className, onChange, value, name = '', children } = props;
-    const { theme } = useContext(Theme);
-    const dark = theme === THEME.DARK ? styles.dark : '';
 
     return (
-        <div className={cn([styles.root, dark])}>
+        <div className={cn([styles.root])}>
             <select name={name} value={value} onChange={onChange} className={cn([styles.select, className])}>
                 {children}
             </select>

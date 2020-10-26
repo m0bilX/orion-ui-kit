@@ -17,7 +17,7 @@
     width: 100%;
 }
 
-.dark .select {
+:global(.dark) .select {
     color: #9090A8;
     background: rgba(224,224,255,.02);
 }

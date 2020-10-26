@@ -7,7 +7,7 @@ input.input {
     -webkit-text-fill-color: #A19FA9;
 }
 
-input.input.dark {
+:global(.dark) input.input {
     color: #9090A8;
     -webkit-text-fill-color: #9090A8;
 }
@@ -30,6 +30,6 @@ input.input.dark {
     background-image: url("/img/search.svg");
 }
 
-.dark:after {
+:global(.dark) .root:after {
     background-image: url("/img/search_dark.svg");
 }

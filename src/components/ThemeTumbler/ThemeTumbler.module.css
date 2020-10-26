@@ -7,7 +7,7 @@
     border-radius: 12px;
 }
 
-.dark {
+:global(.dark) .root {
     background: linear-gradient(149.04deg, #00FFAA 0%, #00BBFF 51.01%, #4579F5 100%);
     box-shadow: 0 0 1px rgba(0, 187, 255, 0.24), 0 2px 4px rgba(27, 10, 82, 0.12), 0 8px 12px rgba(0, 187, 255, 0.24);
 }

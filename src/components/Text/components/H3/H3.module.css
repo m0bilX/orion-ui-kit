@@ -5,7 +5,7 @@
     color: #434054;
 }
 
-.dark {
+:global(.dark) .root {
     color: #fff;
 }
 

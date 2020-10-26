@@ -6,7 +6,7 @@
     color: #A19FA9;
 }
 
-.root.dark {
+:global(.dark) .root {
     color: #fff;
 }
 

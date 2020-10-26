@@ -48,12 +48,12 @@ input[type="radio"]:checked ~ .point:after,
     border-radius: 50%;
 }
 
-.dark input[type="radio"]:checked ~ .point,
-.dark .pointActive {
+:global(.dark) input[type="radio"]:checked ~ .point,
+:global(.dark) .pointActive {
     border: 1px solid #fff;
 }
 
-.dark input[type="radio"]:checked ~ .point:after,
-.dark .pointActive:after {
+:global(.dark) input[type="radio"]:checked ~ .point:after,
+:global(.dark) .pointActive:after {
     background: #fff;
 }

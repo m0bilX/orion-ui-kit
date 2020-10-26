@@ -20,7 +20,7 @@ input:-webkit-autofill {
     outline: none;
 }
 
-.root.dark {
+:global(.dark) .root {
     color: #9090A8;
     -webkit-text-fill-color: #9090A8;
     background: rgba(224, 224, 255, 0.02);
