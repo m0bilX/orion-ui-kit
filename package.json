@@ -1,6 +1,6 @@
 {
   "name": "@orionprotocol/orion-ui-kit",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Shared UI components and styles",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -22,7 +22,10 @@
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "add-locale": "lingui add-locale",
+    "extract": "lingui extract",
+    "compile": "lingui compile"
   },
   "peerDependencies": {
     "react": "^16.0.0"

@@ -92,7 +92,7 @@
   "components.trade_buy_sell.trade_type.sell": "продать",
   "components.trade_buy_sell.withdraw": "Снять",
   "components.trade_history.btn.history": "История",
-  "components.trade_history.btn.orders": "Ордеры",
+  "components.trade_history.btn.orders": "Открытые",
   "components.trade_history.order_status.all": "Все",
   "components.trade_history.order_status.cancelled": "Отменен",
   "components.trade_history.order_status.filled": "Выполнен",

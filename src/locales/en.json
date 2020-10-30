@@ -92,7 +92,7 @@
   "components.trade_buy_sell.trade_type.sell": "sell",
   "components.trade_buy_sell.withdraw": "Withdraw",
   "components.trade_history.btn.history": "History",
-  "components.trade_history.btn.orders": "Orders",
+  "components.trade_history.btn.orders": "Open Orders",
   "components.trade_history.order_status.all": "All",
   "components.trade_history.order_status.cancelled": "Cancelled",
   "components.trade_history.order_status.filled": "Filled",
