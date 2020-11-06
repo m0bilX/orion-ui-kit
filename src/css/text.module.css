@@ -1,8 +1,9 @@
 small {
   font-weight: 500;
-  font-size: 10px;
-  line-height: 100%;
+  font-size: 12px;
+  line-height: 14px;
   color: #A19FA9;
+  display: block;
 }
 
 :global(.dark) small {
