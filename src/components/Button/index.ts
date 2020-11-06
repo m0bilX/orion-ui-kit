@@ -1,2 +1,1 @@
-export { Button } from './Button';
-export { BUTTON_TYPE } from './Button.enums';
+export { Button } from './Button'

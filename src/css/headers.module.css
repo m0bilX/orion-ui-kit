@@ -3,9 +3,10 @@ h1 {
   font-size: 25px;
   line-height: 100%;
   color: #141029;
+  margin: 0;
 }
 
-.dark h1 {
+:global(.dark) h1 {
   color: #fff;
 }
 
@@ -20,9 +21,10 @@ h2 {
   font-size: 20px;
   line-height: 100%;
   color: #434054;
+  margin: 0;
 }
 
-.dark h2 {
+:global(.dark) h2 {
   color: #fff;
 }
 
@@ -31,9 +33,10 @@ h3 {
   font-size: 16px;
   line-height: 24px;
   color: #434054;
+  margin: 0;
 }
 
-.dark h3 {
+:global(.dark) h3 {
   color: #fff;
 }
 
@@ -49,8 +52,9 @@ h4 {
   font-size: 14px;
   line-height: 100%;
   color: #434054;
+  margin: 0;
 }
 
-.dark h4 {
+:global(.dark) h4 {
   color: #fff;
 }
