@@ -2,7 +2,6 @@ import React, { FC, useState } from 'react';
 import cn from 'classnames';
 import styles from './Accordion.module.css';
 import { DropdownHeader } from "../DropdownHeader";
-import { H3, H4 } from "../Text";
 
 type Props = {
     className?: string;
@@ -21,9 +20,9 @@ export const Accordion: FC<Props> = ({ className = '', isSmall, title, children 
                 isSmall={isSmall}
             >
                 {isSmall ? (
-                    <H4 className={styles.dropdownHeaderH3}>{title}</H4>
+                    <h4 className={styles.dropdownHeaderH3}>{title}</h4>
                 ) : (
-                    <H3 className={styles.dropdownHeaderH3}>{title}</H3>
+                    <h3 className={styles.dropdownHeaderH3}>{title}</h3>
                 )}
 
             </DropdownHeader>

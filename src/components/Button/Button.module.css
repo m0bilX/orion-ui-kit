@@ -13,7 +13,7 @@
     pointer-events: none;
 }
 
-.btnLite {
+.light {
     composes: btn;
     background: #F8F8F8;
     border-radius: 2px;
@@ -24,7 +24,7 @@
     border: 0;
 }
 
-:global(.dark) .btnLite {
+:global(.dark) .light {
     background: rgba(224, 224, 255, 0.02);
 }
 

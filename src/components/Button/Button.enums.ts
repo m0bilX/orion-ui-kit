@@ -1,5 +1,0 @@
-export enum BUTTON_TYPE {
-    LITE = 'LITE',
-    TRANSPARENT = 'TRANSPARENT',
-    PRIMARY = 'PRIMARY',
-}

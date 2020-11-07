@@ -1,1 +1,0 @@
-export { NormalText } from './NormalText';
