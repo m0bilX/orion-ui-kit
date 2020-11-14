@@ -12,7 +12,7 @@ type Props = {
 
 export const Search: FC<Props> = ({ onChange, className }) => {
     const { i18n } = useLingui();
-    const placeholder = i18n._(defineMessage({ id: 'components.search.placeholder', message: 'Search...' }));
+    const placeholder = i18n._(defineMessage({ id: 'search.placeholder', message: 'Search...' }));
 
     return (
         <div className={cn([styles.root, className])}>
