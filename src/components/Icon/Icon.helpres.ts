@@ -52,6 +52,10 @@ export const getIconSrc = (type: ICON_TYPE, isDark: boolean) => {
             return isDark ? '/img/copy_dark.svg' : '/img/copy.svg';
         case ICON_TYPE.ARROWS_TRADE_BLUE_VERTICAL:
             return isDark ? '/img/arrows_trade_blue_vertical.svg' : '/img/arrows_trade_blue_vertical.svg';
+        case ICON_TYPE.SUCCESS:
+            return '/img/check_green.svg';
+        case ICON_TYPE.ERROR:
+            return '/img/cross_red.svg';
         default:
             return '';
     }

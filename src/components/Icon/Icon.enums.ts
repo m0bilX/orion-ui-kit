@@ -26,4 +26,6 @@ export enum ICON_TYPE {
     BROADCAST = 'BROADCAST',
     COPY = 'COPY',
     LOGO = 'LOGO',
+    SUCCESS = 'SUCCESS',
+    ERROR = 'ERROR',
 }
