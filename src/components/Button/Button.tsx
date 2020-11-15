@@ -3,7 +3,7 @@ import cn from 'classnames'
 import styles from './Button.module.css'
 
 type Props = {
-  type: 'transparent' | 'primary' | 'light'
+  type: 'transparent' | 'primary' | 'light' | 'lighter' | 'empty' | 'border'
 }
 
 export const Button: FC<Props & React.HTMLProps<HTMLButtonElement>> = ({
