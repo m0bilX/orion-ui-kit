@@ -1,9 +1,67 @@
-/* add css module styles here (optional) */
+@import "./css/scrollbars.css";
+@import "./css/icons.css";
+@import "./css/calendar.css";
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+:root {
+  --regular: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+
+  --blue: #00BBFF;
+  --red: #ff0000;
+
+  --bg-main-color: #FAFAFB;
+  --bg-group-color: #FFF;
+  --bg-lite-blue: #EFFAFE;
+
+  --color-text: #424052;
+  --color-text-second: #72707E;
+  --color-text-grey: #A09FA8;
+  --color-text-error: #F54562;
+
+  --font-10: 10px;
+  --font-11: 11px;
+  --font-14: 14px;
+  --font-16: 16px;
+}
+
+:root :global(.dark) {
+  --bg-main-color: #191929;
+  --bg-group-color: #2A2A3F;
+  --bg-lite-blue: #2A2D45;
+
+  --color-text: #fff;
+  --color-text-second: #9797B1;
+  --color-text-grey: #73738B;
+  --color-text-error: #ff00aa;
+}
+
+:root :global(.wide) {
+  --font-10: 14px;
+  --font-11: 16px;
+  --font-14: 22px;
+  --font-16: 24px;
+}
+
+a, a:hover, a:active, a:after {
+  text-decoration: none;
+}
+
+select {
+  padding-right: 20px;
+}
+
+option {
+  background-color: var(--bg-group-color);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }

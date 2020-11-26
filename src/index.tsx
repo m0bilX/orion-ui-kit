@@ -3,6 +3,7 @@
 // export * from "./css/scrollbars.css"
 export * from './css/headers.module.css'
 export * from './css/text.module.css'
+export * from './styles.module.css'
 
 export * from './components/Accordion'
 export * from './components/Arrow'
@@ -22,5 +23,6 @@ export * from './components/Text'
 export * from './components/Theme'
 export * from './components/ThemeTumbler'
 export * from './components/Tabs'
+export * from './components/Modal'
 export * from './hooks/useClickOutside'
 export * from './hocs'
