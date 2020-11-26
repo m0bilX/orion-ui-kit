@@ -1,0 +1,1 @@
+export { BigTabs } from './BigTabs'
