@@ -423,16 +423,6 @@
   background: #fff;
 }
 
-@media screen and (min-width: 1600px) {
-  .react-datepicker-component .react-datepicker-input input {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    padding: 6px 36px 6px 12px;
-    height: auto;
-  }
-}
-
 @media screen and (max-width: 800px) {
   .react-datepicker.floating {
     transform: translate(-50%, -50%);
