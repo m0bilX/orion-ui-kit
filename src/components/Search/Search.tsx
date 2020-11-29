@@ -1,8 +1,7 @@
 import React, {ChangeEvent, FC} from 'react';
-import { useLingui } from "@lingui/react";
-import { defineMessage }  from "@lingui/macro";
 import cn from 'classnames';
 import { InputText } from "../Inputs";
+import { useTrans } from '../../hooks/useTrans';
 import styles from './Search.module.css';
 
 type Props = {
@@ -11,8 +10,8 @@ type Props = {
 };
 
 export const Search: FC<Props> = ({ onChange, className }) => {
-    const { i18n } = useLingui();
-    const placeholder = i18n._(defineMessage({ id: 'search_placeholder', message: 'Search...' }));
+    const { translate } = useTrans();
+    const placeholder = translate('search_placeholder', 'Search...');
 
     return (
         <div className={cn([styles.root, className])}>
