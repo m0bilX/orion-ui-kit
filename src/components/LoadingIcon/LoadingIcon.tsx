@@ -9,7 +9,14 @@ type Props = {
 export const LoadingIcon: React.FC<Props> = ({ className }) => {
   return (
     <div className={cn(styles.root, className)}>
-      {new Array(8).fill(<div />)}
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
     </div>
   )
 }
