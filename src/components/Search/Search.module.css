@@ -17,19 +17,10 @@ input.input {
     width: 100%;
 }
 
-.root:after {
-    content: ' ';
+.icon {
     position: absolute;
     left: 12px;
     top: 3px;
     width: 24px;
     height: 24px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url("/img/search.svg");
-}
-
-:global(.dark) .root:after {
-    background-image: url("/img/search_dark.svg");
 }

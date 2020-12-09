@@ -5,6 +5,7 @@ import {
   compareString
 } from './Table.handlers'
 import { LoadingIcon } from '../LoadingIcon'
+import styles from './Table.module.css'
 
 type TableHeader = {
   text: string
@@ -93,7 +94,7 @@ export const Table: FC<TableProps> = (props) => {
 
   const getSortClass = (columnIndex: number): string => {
     if (columnIndex === sortState.columnIndex) {
-      return sortState.ascending ? 'ascending' : 'descending'
+      return sortState.ascending ? styles.ascending : styles.descending
     } else {
       return ''
     }

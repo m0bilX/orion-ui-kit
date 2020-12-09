@@ -1,18 +1,25 @@
-import React, {FC} from "react";
-import cn from 'classnames';
-import { Icon, ICON_TYPE } from "../Icon";
-import styles from "./CryptoCurrency.module.css";
+import React, { FC } from 'react'
+import cn from 'classnames'
+import { CurrencyIcon, CurrencyType } from '../Icon'
+import styles from './CryptoCurrency.module.css'
+import { IconColorTypeThemed } from '../Icon/IconWrapper/IconColorType'
 
 type Props = {
-    type: ICON_TYPE;
-    className?: string;
-};
+  icon: CurrencyType
+  type?: IconColorTypeThemed
+  className?: string
+}
 
-export const CryptoCurrency: FC<Props> = ({ type, className = '', children }) => {
-    return (
-        <div className={cn([styles.root, className])}>
-            <Icon type={type} className={styles.iconWrapper} />
-            <small className={styles.text}>{children}</small>
-        </div>
-    );
-};
+export const CryptoCurrency: FC<Props> = ({
+  icon,
+  type = 'theme',
+  className = '',
+  children
+}) => {
+  return (
+    <div className={cn([styles.root, className])}>
+      <CurrencyIcon icon={icon} className={styles.iconWrapper} type={type} />
+      <small className={styles.text}>{children}</small>
+    </div>
+  )
+}

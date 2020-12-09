@@ -1,0 +1,15 @@
+.root {
+    flex-shrink: 0;
+}
+
+.img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.icon {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}

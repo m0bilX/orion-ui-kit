@@ -53,13 +53,6 @@
   color: #fff;
 }
 
-/* TODO: replace when refactoring icons */
-.lighter :global(.icon) {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-
 .empty {
   composes: btn;
   background: transparent;

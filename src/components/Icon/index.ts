@@ -1,2 +1,3 @@
-export { Icon } from './Icon';
-export { ICON_TYPE } from './Icon.enums';
+export * from './Icon'
+export * from './ExchangeIcon'
+export * from './CurrencyIcon'

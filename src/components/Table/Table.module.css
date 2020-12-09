@@ -1,0 +1,15 @@
+.ascending:after {
+  background-image: url("/img/icons/ui/dropdown/grey.svg");
+}
+
+:global(.dark) .ascending:after {
+  background-image: url("/img/icons/ui/dropdown/dark.svg");
+}
+
+.descending:after {
+  background-image: url("/img/icons/ui/dropup/grey.svg");
+}
+
+:global(.dark) .descending:after {
+  background-image: url("/img/icons/ui/dropup/dark.svg");
+}

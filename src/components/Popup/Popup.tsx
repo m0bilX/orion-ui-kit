@@ -1,6 +1,6 @@
 import React, { FC, useEffect } from 'react'
 import cn from 'classnames'
-import { Icon, ICON_TYPE } from '../Icon'
+import { Icon } from '../Icon'
 import styles from './Popup.module.css'
 
 type Props = {
@@ -27,7 +27,7 @@ export const Popup: FC<Props> = (props) => {
     <div className={cn([styles.root, className])}>
       <div className={styles.popup}>
         <div className={styles.closeButtonWrapper} onClick={onClose}>
-          <Icon type={ICON_TYPE.CLOSE} className={styles.closeButton} />
+          <Icon icon='close' className={styles.closeButton} />
         </div>
         {children}
       </div>
