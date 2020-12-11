@@ -1,0 +1,13 @@
+.root {}
+
+.label {
+    margin-left: 15px;
+}
+
+.label.labelActive {
+    color: #434054;
+}
+
+:global(.dark) .label.labelActive {
+    color: #fff;
+}

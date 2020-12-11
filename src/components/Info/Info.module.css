@@ -1,0 +1,13 @@
+.root {
+    display: flex;
+}
+
+.icon {
+    margin-top: 2px;
+    width: 18px;
+    height: 18px;
+}
+
+.label {
+    margin-left: 14px;
+}
