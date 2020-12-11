@@ -62,18 +62,19 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
-    "@types/classnames": "2.2.10",
-    "classnames": "2.2.6",
     "@lingui/babel-preset-react": "2.9.1",
-    "@lingui/loader": "^2.9.1",
-    "@lingui/react": "3.0.0-13",
-    "@types/lingui__macro": "2.7.3",
-    "@types/lingui__react": "2.8.2",
     "@lingui/cli": "3.0.0-13",
     "@lingui/core": "3.0.0-13",
+    "@lingui/loader": "^2.9.1",
     "@lingui/macro": "3.0.0-13",
+    "@lingui/react": "3.0.0-13",
+    "@types/classnames": "2.2.10",
     "@types/lingui__core": "2.7.0",
-    "bignumber.js": "9.0.0"
+    "@types/lingui__macro": "2.7.3",
+    "@types/lingui__react": "2.8.2",
+    "bignumber.js": "9.0.0",
+    "classnames": "2.2.6",
+    "react-chartjs-2": "^2.11.1"
   },
   "files": [
     "dist"

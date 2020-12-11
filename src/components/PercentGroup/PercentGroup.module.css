@@ -1,0 +1,29 @@
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.percent {
+    width: 20%;
+    margin: 0 0 0 4px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-size: var(--font-14);
+    font-weight: var(--medium);
+    color: var(--color-text-second);
+    background: rgba(20,16,41,.02);
+    border-radius: 2px;
+    line-height: 36px;
+    cursor: pointer;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    -webkit-appearance: none;
+    border: none;
+}
+
+.percent:first-child {
+    margin: 0;
+}
