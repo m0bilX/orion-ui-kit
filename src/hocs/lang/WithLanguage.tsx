@@ -1,8 +1,8 @@
 import React, {FC, useEffect, useState} from "react";
 import { I18nProvider } from '@lingui/react';
 import { setupI18n } from '@lingui/core';
-import { I18nContext } from "../components/I18nContext";
-import { LANGUAGE } from "../components/Language";
+import { LanguageContext } from "./LanguageContext";
+import { LANGUAGE } from "./Language.enums";
 
 export const i18n = setupI18n();
 
@@ -14,7 +14,7 @@ const getLocale = (language: LANGUAGE) => {
     return 'en'
 }
 
-export const WithTranslate: FC = ({ children }) => {
+export const WithLanguage: FC = ({ children }) => {
     const currentLanguage = localStorage.getItem('language') as LANGUAGE || LANGUAGE.EN;
     const [language, setLanguage] = useState(currentLanguage);
 
@@ -34,14 +34,14 @@ export const WithTranslate: FC = ({ children }) => {
     }
 
     useEffect(() => {
-        changeLanguage(language).then();
+        changeLanguage(language);
     }, []);
 
     return (
-        <I18nContext.Provider value={{ language, changeLanguage, getLocale }}>
+        <LanguageContext.Provider value={{ language, changeLanguage, getLocale }}>
             <I18nProvider i18n={i18n}>
                 {children}
             </I18nProvider>
-        </I18nContext.Provider>
+        </LanguageContext.Provider>
     );
 }

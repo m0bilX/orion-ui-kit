@@ -6,4 +6,5 @@ export type ExchangeType =
   | 'kucoin'
   | 'okex'
   | 'poloniex'
+  | 'orion'
   | string

@@ -1,9 +1,9 @@
 import React, { FC, useContext, useEffect, useState } from 'react'
 import cn from 'classnames'
 import styles from './Sidebar.module.css'
-import { Theme } from '../Theme'
+import { Theme } from '../../hocs'
 import { Icon, IconType } from '../Icon'
-import { Language } from '../Language'
+import { LanguageButton } from '../LanguageButton'
 import { useTrans } from '../../hooks/useTrans'
 
 type Button = {
@@ -81,7 +81,7 @@ export const Sidebar: FC<Props> = ({ buttons, onClose, mobile }) => {
             {darkMode}
           </div>
 
-          <Language />
+          <LanguageButton />
         </div>
       </div>
 

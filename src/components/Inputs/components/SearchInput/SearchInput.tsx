@@ -1,16 +1,16 @@
 import React, { ChangeEvent, FC } from 'react'
 import cn from 'classnames'
-import { InputText } from '../Inputs'
-import { useTrans } from '../../hooks/useTrans'
-import styles from './Search.module.css'
-import { Icon } from '../Icon'
+import { InputText } from '../InputText'
+import { useTrans } from '../../../../hooks/useTrans'
+import styles from './SearchInput.module.css'
+import { Icon } from '../../../Icon'
 
 type Props = {
   onChange: (e: ChangeEvent<HTMLInputElement>) => void
   className: string
 }
 
-export const Search: FC<Props> = ({ onChange, className }) => {
+export const SearchInput: FC<Props> = ({ onChange, className }) => {
   const { translate } = useTrans()
   const placeholder = translate('search_placeholder', 'Search...')
 

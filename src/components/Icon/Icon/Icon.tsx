@@ -1,5 +1,5 @@
 import React, { FC, useContext } from 'react'
-import { THEME, Theme } from '../../Theme'
+import { THEME, Theme } from '../../../hocs'
 import { IconWrapper } from '../IconWrapper/IconWrapper'
 import { IconType } from './IconType'
 import { IconColorTypeThemed } from '../IconWrapper/IconColorType'

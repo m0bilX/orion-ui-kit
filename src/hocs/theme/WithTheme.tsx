@@ -1,5 +1,6 @@
 import React, { FC, useState } from "react";
-import { Theme, THEME } from '../components/Theme';
+import { Theme, } from './Theme';
+import { THEME } from './Theme.enums';
 
 export const WithTheme: FC = ({ children }) => {
     const currentTheme = localStorage.getItem('theme') as THEME || THEME.DARK;
