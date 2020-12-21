@@ -1,1 +1,1 @@
-export { ThemeTumbler } from './ThemeTumbler';
+export {ThemeTumbler} from './ThemeTumbler';

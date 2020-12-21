@@ -1,8 +1,8 @@
-import React, { FC, useContext } from 'react'
-import { THEME, Theme } from '../../../hocs'
-import { IconWrapper } from '../IconWrapper/IconWrapper'
-import { CurrencyType } from './CurrencyType'
-import { IconColorTypeThemed } from '../IconWrapper/IconColorType'
+import React, {FC, useContext} from 'react'
+import {THEME, Theme} from '../../../hocs'
+import {IconWrapper} from '../IconWrapper/IconWrapper'
+import {CurrencyType} from './CurrencyType'
+import {IconColorTypeThemed} from '../IconWrapper/IconColorType'
 
 type Props = {
   icon: CurrencyType
@@ -12,11 +12,11 @@ type Props = {
 }
 
 export const CurrencyIcon: FC<Props> = ({
-  className = '',
-  type = 'theme',
-  icon
-}) => {
-  const { theme } = useContext(Theme)
+                                          className = '',
+                                          type = 'theme',
+                                          icon
+                                        }) => {
+  const {theme} = useContext(Theme)
 
   if (type === 'theme') {
     type = theme === THEME.DARK ? 'grey' : 'color'

@@ -1,23 +1,23 @@
 .filled {
-    color: #FFAA00;
+  color: #FFAA00;
 }
 
 :global(.dark) .filled {
-    color: #EEFF00;
+  color: #EEFF00;
 }
 
 .cancelled {
-    color: #F54562;
+  color: #F54562;
 }
 
 :global(.dark) .cancelled {
-    color: #FF00AA;
+  color: #FF00AA;
 }
 
 .open {
-    color: #16B862;
+  color: #16B862;
 }
 
 :global(.dark) .open {
-    color: #00FFAA;
+  color: #00FFAA;
 }

@@ -1,23 +1,23 @@
-import React, { FC, useState } from "react";
-import { Theme, } from './Theme';
-import { THEME } from './Theme.enums';
+import React, {FC, useState} from "react";
+import {Theme,} from './Theme';
+import {THEME} from './Theme.enums';
 
-export const WithTheme: FC = ({ children }) => {
-    const currentTheme = localStorage.getItem('theme') as THEME || THEME.DARK;
-    const [theme, setTheme] = useState(currentTheme);
+export const WithTheme: FC = ({children}) => {
+  const currentTheme = localStorage.getItem('theme') as THEME || THEME.DARK;
+  const [theme, setTheme] = useState(currentTheme);
 
-    const toggleTheme = (newTheme?: THEME) => {
-        const nextTheme = newTheme ? newTheme : (theme === THEME.WHITE ? THEME.DARK : THEME.WHITE);
+  const toggleTheme = (newTheme?: THEME) => {
+    const nextTheme = newTheme ? newTheme : (theme === THEME.WHITE ? THEME.DARK : THEME.WHITE);
 
-        localStorage.setItem('theme', nextTheme);
-        setTheme(nextTheme);
-    }
+    localStorage.setItem('theme', nextTheme);
+    setTheme(nextTheme);
+  }
 
-    return (
-        <Theme.Provider
-            value={{ theme, toggleTheme }}
-        >
-            {children}
-        </Theme.Provider>
-    );
+  return (
+    <Theme.Provider
+      value={{theme, toggleTheme}}
+    >
+      {children}
+    </Theme.Provider>
+  );
 }

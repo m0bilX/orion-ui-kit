@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, {FC} from 'react'
 import cn from 'classnames'
 import styles from './Button.module.css'
 
@@ -7,10 +7,10 @@ type Props = {
 }
 
 export const Button: FC<Props & React.HTMLProps<HTMLButtonElement>> = ({
-  type = 'light',
-  ...otherProps
-}) => {
-  const { children, className } = otherProps
+                                                                         type = 'light',
+                                                                         ...otherProps
+                                                                       }) => {
+  const {children, className} = otherProps
 
   return (
     <button

@@ -1,1 +1,1 @@
-export { DropdownHeader } from './DropdownHeader';
+export {DropdownHeader} from './DropdownHeader';

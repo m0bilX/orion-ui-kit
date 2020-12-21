@@ -1,1 +1,1 @@
-export { Snackbars } from './Snackbars'
+export {Snackbars} from './Snackbars'

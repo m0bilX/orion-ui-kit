@@ -1,10 +1,6 @@
-import React, { useMemo, useState, FC } from 'react'
-import {
-  compareBigNumber,
-  compareNumber,
-  compareString
-} from './Table.handlers'
-import { LoadingIcon } from '../LoadingIcon'
+import React, {FC, useMemo, useState} from 'react'
+import {compareBigNumber, compareNumber, compareString} from './Table.handlers'
+import {LoadingIcon} from '../LoadingIcon'
 import styles from './Table.module.css'
 
 type TableHeader = {
@@ -86,9 +82,9 @@ export const Table: FC<TableProps> = (props) => {
     const already = sortState.columnIndex === columnIndex
     setOpenIndex(-1)
     if (already) {
-      setSortState({ columnIndex, ascending: !sortState.ascending })
+      setSortState({columnIndex, ascending: !sortState.ascending})
     } else {
-      setSortState({ columnIndex, ascending: true })
+      setSortState({columnIndex, ascending: true})
     }
   }
 
@@ -130,7 +126,7 @@ export const Table: FC<TableProps> = (props) => {
         {props.children}
       </div>
       <div className={props.scrollContainerClassName}>{rows}</div>
-      {props.isLoading && <LoadingIcon />}
+      {props.isLoading && <LoadingIcon/>}
     </div>
   )
 }

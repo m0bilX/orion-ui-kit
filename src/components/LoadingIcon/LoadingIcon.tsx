@@ -6,17 +6,17 @@ type Props = {
   className?: string
 }
 
-export const LoadingIcon: React.FC<Props> = ({ className }) => {
+export const LoadingIcon: React.FC<Props> = ({className}) => {
   return (
     <div className={cn(styles.root, className)}>
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
+      <div/>
+      <div/>
+      <div/>
+      <div/>
+      <div/>
+      <div/>
+      <div/>
+      <div/>
     </div>
   )
 }

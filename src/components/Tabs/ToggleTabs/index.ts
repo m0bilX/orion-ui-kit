@@ -1,1 +1,1 @@
-export { ToggleTabs } from './ToggleTabs'
+export {ToggleTabs} from './ToggleTabs'

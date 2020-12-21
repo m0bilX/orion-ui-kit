@@ -1,6 +1,6 @@
-import React, { FC } from 'react'
+import React, {FC} from 'react'
 import cn from 'classnames'
-import { STATUS_TYPE } from './StatusText.enums'
+import {STATUS_TYPE} from './StatusText.enums'
 import styles from './StatusText.module.css'
 
 type Props = {
@@ -21,7 +21,7 @@ const getStatusTypeClassName = (type: STATUS_TYPE) => {
   }
 }
 
-export const StatusText: FC<Props> = ({ className = '', type, children }) => {
+export const StatusText: FC<Props> = ({className = '', type, children}) => {
   const rootClassName = cn([getStatusTypeClassName(type), className])
 
   return <p className={rootClassName}>{children}</p>

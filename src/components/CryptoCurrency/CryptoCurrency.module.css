@@ -1,22 +1,22 @@
 .root {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .text {
-    color: #434054;
-    margin-left: 7px;
-    font-weight: 600;
+  color: #434054;
+  margin-left: 7px;
+  font-weight: 600;
 }
 
 :global(.dark) .text {
-    color: #fff;
+  color: #fff;
 }
 
 .iconWrapper {
-    width: 21px;
-    height: 21px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 21px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,12 +1,12 @@
-import React, { FC } from 'react'
+import React, {FC} from 'react'
 import styles from './PercentGroup.module.css'
-import { Button } from '../Button'
+import {Button} from '../Button'
 
 interface Props {
   clickPercent: (percent: number) => void
 }
 
-export const PercentGroup: FC<Props> = ({ clickPercent }) => {
+export const PercentGroup: FC<Props> = ({clickPercent}) => {
   return (
     <div className={styles.root}>
       <Button

@@ -1,1 +1,1 @@
-export { PercentGroup } from './PercentGroup'
+export {PercentGroup} from './PercentGroup'

@@ -1,5 +1,5 @@
-import React, { createContext } from 'react'
-import { LANGUAGE } from './Language.enums'
+import React, {createContext} from 'react'
+import {LANGUAGE} from './Language.enums'
 
 type LanguageContextType = {
   language: LANGUAGE
@@ -7,10 +7,9 @@ type LanguageContextType = {
   getLocale: (language: LANGUAGE) => string
 }
 
-export const LanguageContext: React.Context<LanguageContextType> = createContext<
-  LanguageContextType
->({
+export const LanguageContext: React.Context<LanguageContextType> = createContext<LanguageContextType>({
   language: LANGUAGE.EN,
-  changeLanguage: () => {},
+  changeLanguage: () => {
+  },
   getLocale: () => 'en'
 })

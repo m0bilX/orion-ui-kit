@@ -1,6 +1,6 @@
-import React, { FC, useEffect, useState } from 'react'
+import React, {FC, useEffect, useState} from 'react'
 import cn from 'classnames'
-import { Icon } from '../Icon'
+import {Icon} from '../Icon'
 import styles from './Popup.module.css'
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
 
 export const Popup: FC<Props> = (props) => {
   const [fadingOut, setFadingOut] = useState(false)
-  const { className, children, onClose } = props
+  const {className, children, onClose} = props
 
   const onAnimationEnd = () => {
     if (fadingOut) {
@@ -42,11 +42,11 @@ export const Popup: FC<Props> = (props) => {
     >
       <div className={styles.popup} onAnimationEnd={onAnimationEnd}>
         <div className={styles.closeButtonWrapper} onClick={onCloseAnimation}>
-          <Icon icon='close' className={styles.closeButton} />
+          <Icon icon='close' className={styles.closeButton}/>
         </div>
         {children}
       </div>
-      <div className={styles.fader} onClick={onCloseAnimation} />
+      <div className={styles.fader} onClick={onCloseAnimation}/>
     </div>
   )
 }

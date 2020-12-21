@@ -1,2 +1,2 @@
-export { CurrencyIcon } from './CurrencyIcon'
-export { CurrencyType } from './CurrencyType'
+export {CurrencyIcon} from './CurrencyIcon'
+export {CurrencyType} from './CurrencyType'

@@ -1,4 +1,4 @@
-import React, { FC, Key } from 'react'
+import React, {FC, Key} from 'react'
 import cn from 'classnames'
 import styles from './ToggleTabs.module.css'
 
@@ -12,18 +12,18 @@ type Props = {
 }
 
 export const ToggleTabs: FC<Props> = ({
-  children,
-  className,
-  tabClassName,
-  transparent,
-  selected,
-  onTabChanged
-}) => {
+                                        children,
+                                        className,
+                                        tabClassName,
+                                        transparent,
+                                        selected,
+                                        onTabChanged
+                                      }) => {
   return (
     <div
       className={cn([
         styles.root,
-        { [styles.transparent]: transparent },
+        {[styles.transparent]: transparent},
         className
       ])}
     >

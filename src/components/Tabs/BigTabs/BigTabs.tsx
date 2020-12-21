@@ -1,4 +1,4 @@
-import React, { FC, Key } from 'react'
+import React, {FC, Key} from 'react'
 import cn from 'classnames'
 import styles from './BigTabs.module.css'
 
@@ -10,11 +10,11 @@ type Props = {
 }
 
 export const BigTabs: FC<Props> = ({
-  children,
-  className,
-  selected,
-  onTabChanged
-}) => {
+                                     children,
+                                     className,
+                                     selected,
+                                     onTabChanged
+                                   }) => {
   return (
     <div className={cn([styles.root, className])}>
       {children.map((child) => (

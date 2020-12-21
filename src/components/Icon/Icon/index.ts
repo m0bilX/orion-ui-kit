@@ -1,2 +1,2 @@
-export { Icon } from './Icon'
-export { IconType } from './IconType'
+export {Icon} from './Icon'
+export {IconType} from './IconType'

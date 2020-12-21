@@ -1,1 +1,1 @@
-export { RadioAdvanced } from './RadioAdvanced';
+export {RadioAdvanced} from './RadioAdvanced';

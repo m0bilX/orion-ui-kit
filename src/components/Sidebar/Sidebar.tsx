@@ -1,10 +1,10 @@
-import React, { FC, useContext, useEffect, useState } from 'react'
+import React, {FC, useContext, useEffect, useState} from 'react'
 import cn from 'classnames'
 import styles from './Sidebar.module.css'
-import { Theme } from '../../hocs'
-import { Icon, IconType } from '../Icon'
-import { LanguageButton } from '../LanguageButton'
-import { useTrans } from '../../hooks/useTrans'
+import {Theme} from '../../hocs'
+import {Icon, IconType} from '../Icon'
+import {LanguageButton} from '../LanguageButton'
+import {useTrans} from '../../hooks/useTrans'
 
 type Button = {
   name: string
@@ -21,9 +21,9 @@ type Props = {
   onDisconnectWallet?: () => void
 }
 
-export const Sidebar: FC<Props> = ({ buttons, onClose, mobile }) => {
-  const { toggleTheme } = useContext(Theme)
-  const { translate } = useTrans()
+export const Sidebar: FC<Props> = ({buttons, onClose, mobile}) => {
+  const {toggleTheme} = useContext(Theme)
+  const {translate} = useTrans()
   const darkMode = translate('dark_mode', 'Dark Mode')
 
   const [isOpen, setIsOpen] = useState(false)
@@ -40,15 +40,15 @@ export const Sidebar: FC<Props> = ({ buttons, onClose, mobile }) => {
   return (
     <div>
       <div
-        className={cn(styles.root, { [styles.open]: isOpen })}
+        className={cn(styles.root, {[styles.open]: isOpen})}
         onMouseEnter={() => setIsOpen(true)}
         onMouseLeave={close}
       >
         <div className={styles.content}>
-          <Icon icon='logo' className={styles.logo} />
+          <Icon icon='logo' className={styles.logo}/>
 
           {buttons.filter(Boolean).map((button: Button) => {
-            const { icon, name, selected, className, onClick } = button
+            const {icon, name, selected, className, onClick} = button
             return (
               <div
                 key={name}
@@ -77,11 +77,11 @@ export const Sidebar: FC<Props> = ({ buttons, onClose, mobile }) => {
               close()
             }}
           >
-            <Icon icon='theme' className={styles.themeSwitch} />
+            <Icon icon='theme' className={styles.themeSwitch}/>
             {darkMode}
           </div>
 
-          <LanguageButton />
+          <LanguageButton/>
         </div>
       </div>
 
@@ -92,7 +92,7 @@ export const Sidebar: FC<Props> = ({ buttons, onClose, mobile }) => {
             setIsOpen(!isOpen)
           }}
         >
-          <Icon icon='logo' className={styles.mobileLogo} />
+          <Icon icon='logo' className={styles.mobileLogo}/>
         </div>
         <div
           onClick={() => {
@@ -100,7 +100,7 @@ export const Sidebar: FC<Props> = ({ buttons, onClose, mobile }) => {
             setIsOpen(!isOpen)
           }}
         >
-          <Icon icon='menu' className={styles.menu} />
+          <Icon icon='menu' className={styles.menu}/>
         </div>
 
         {mobile}

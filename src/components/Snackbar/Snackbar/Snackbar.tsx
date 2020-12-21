@@ -1,15 +1,15 @@
-import React, { FC, useEffect, useRef, useState } from 'react'
+import React, {FC, useEffect, useRef, useState} from 'react'
 import cn from 'classnames'
 import styles from './Snackbar.module.css'
-import { Icon } from '../../Icon'
-import { SnackbarStateItem } from './SnackbarStateItem'
+import {Icon} from '../../Icon'
+import {SnackbarStateItem} from './SnackbarStateItem'
 
 type Props = SnackbarStateItem & {
   onClose: (id: string) => void
 }
 
 export const Snackbar: FC<Props> = (props) => {
-  const { onClose, id, lifeSpan = 5000, iconType, link, text, linkText } = props
+  const {onClose, id, lifeSpan = 5000, iconType, link, text, linkText} = props
   const rootElem = useRef<HTMLDivElement>(null)
   const timelineElem = useRef<HTMLDivElement>(null)
   const [isClosing, setIsClosing] = useState(false)
@@ -108,7 +108,7 @@ export const Snackbar: FC<Props> = (props) => {
       <div>
         <div className={styles.item}>
           {typeof iconType !== 'undefined' && (
-            <Icon icon={iconType} className={styles.icon} />
+            <Icon icon={iconType} className={styles.icon}/>
           )}
           <div className={styles.inner}>
             <h3>{text}</h3>
@@ -128,9 +128,9 @@ export const Snackbar: FC<Props> = (props) => {
         </div>
       </div>
       <div onClick={closeHandler} className={styles.closeBtn}>
-        <Icon icon='close' className={styles.closeIcon} />
+        <Icon icon='close' className={styles.closeIcon}/>
       </div>
-      <div className={styles.timeline} ref={timelineElem} />
+      <div className={styles.timeline} ref={timelineElem}/>
     </div>
   )
 }

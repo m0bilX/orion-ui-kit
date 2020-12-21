@@ -1,1 +1,1 @@
-export { LoadingIcon } from './LoadingIcon'
+export {LoadingIcon} from './LoadingIcon'

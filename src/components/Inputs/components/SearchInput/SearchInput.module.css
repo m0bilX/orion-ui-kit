@@ -1,26 +1,26 @@
 input.input {
-    width: 100%;
-    border: 0;
-    padding: 7px 9px 9px 48px;
-    box-shadow: none;
-    color: #A19FA9;
-    -webkit-text-fill-color: #A19FA9;
+  width: 100%;
+  border: 0;
+  padding: 7px 9px 9px 48px;
+  box-shadow: none;
+  color: #A19FA9;
+  -webkit-text-fill-color: #A19FA9;
 }
 
 :global(.dark) input.input {
-    color: #9090A8;
-    -webkit-text-fill-color: #9090A8;
+  color: #9090A8;
+  -webkit-text-fill-color: #9090A8;
 }
 
 .root {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .icon {
-    position: absolute;
-    left: 12px;
-    top: 3px;
-    width: 24px;
-    height: 24px;
+  position: absolute;
+  left: 12px;
+  top: 3px;
+  width: 24px;
+  height: 24px;
 }

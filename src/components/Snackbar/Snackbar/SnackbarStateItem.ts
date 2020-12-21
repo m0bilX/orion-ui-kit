@@ -1,4 +1,4 @@
-import { IconType } from '../../Icon'
+import {IconType} from '../../Icon'
 
 export type SnackbarStateItem = {
   id: string

@@ -55,7 +55,7 @@
     background: rgba(224, 224, 255, 0.02);
   }
 
-  :global(.dark)  ::-webkit-scrollbar-thumb {
+  :global(.dark) ::-webkit-scrollbar-thumb {
     background: rgba(224, 224, 255, 0.06);
   }
 

@@ -1,6 +1,6 @@
-import { useLingui } from '@lingui/react'
-import { defineMessage } from '@lingui/macro'
-import { I18n } from '@lingui/core'
+import {useLingui} from '@lingui/react'
+import {defineMessage} from '@lingui/macro'
+import {I18n} from '@lingui/core'
 
 const translate = (
   i18n: I18n,
@@ -18,7 +18,7 @@ const translate = (
 }
 
 export const useTrans = () => {
-  const { i18n } = useLingui()
+  const {i18n} = useLingui()
 
   return {
     translate: (id: string, message?: string, values?: Object | undefined) =>

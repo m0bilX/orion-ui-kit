@@ -1,1 +1,1 @@
-export { BigTabs } from './BigTabs'
+export {BigTabs} from './BigTabs'
