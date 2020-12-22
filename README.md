@@ -2,6 +2,17 @@
 
 > Shared UI components and styles
 
+## Build
+
+```bash
+npm run build
+
+cp -R src/locales dist/
+
+mkdir dist/css
+cp src/css/calendar.css dist/css/
+```
+
 ## Authorize
 
 ```bash
