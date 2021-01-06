@@ -1,6 +1,6 @@
 {
   "name": "@orionprotocol/orion-ui-kit",
-  "version": "1.0.33",
+  "version": "1.0.34",
   "description": "Shared UI components and styles",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
