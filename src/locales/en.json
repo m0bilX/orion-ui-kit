@@ -97,6 +97,7 @@
   "status": "Status",
   "type": "Type",
   "exchange": "Exchange",
+  "exchange_balance": "Exchange balance",
   "id": "ID",
   "last_price": "Last price",
   "chart": "Chart",

@@ -97,6 +97,7 @@
   "status": "Статус",
   "type": "Тип",
   "exchange": "Биржа",
+  "exchange_balance": "Баланс обмена",
   "id": "ID",
   "last_price": "Последняя цена",
   "chart": "График",
